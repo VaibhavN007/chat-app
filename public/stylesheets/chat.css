@@ -1,0 +1,286 @@
+body
+{
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin-top: 12px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 0px;
+}
+a
+{
+	color: #00B7FF;
+}
+#container
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#room, #name
+{
+	background-color: #3399ff;
+	margin-bottom: 1em;
+	display: inline-block;
+	position: relative;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+	font-family: cursive;
+}
+
+.inline-room-list, .inline-message-list, .inline-roommates-list
+{
+	margin: 10px;
+	float: left;
+	height: auto;
+}
+.inline-room-list, .inline-roommates-list
+{
+	width: 150px;
+	min-width: 130px;
+}
+.inline-message-list
+{
+	width: 600px;
+	min-width: 460px;
+}
+.room_and_messages
+{
+	display: flex;
+}
+
+#messages
+{
+	width: 100%;
+	min-height: 300px;
+	
+	/*max-height: 480px;*/
+	height: 300px;
+	
+	overflow: auto;
+	background-color: #e7ebff;
+	padding: 10px;
+	display: inline-block;
+	float: left;
+	border-radius: 10px;
+}
+
+#room-list, #roommates
+{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	background-color: transparent;
+	border-radius: 3px;
+}
+
+#room-list div, #roommates div
+{
+	text-align: center;
+	font-family: cursive;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+#roommates div
+{
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+}
+#send-form
+{
+	margin: auto 200px;
+}
+#send-message
+{
+	width: 100%;
+	max-width: 600px;
+	min-width: 300px;
+	margin: 1em;
+	margin-top: 0px;
+	padding: 4px;
+	letter-spacing: 1px;
+	font-family: cursive;
+}
+
+#send-button
+{
+	width: 72px;
+	margin-left: 10px;
+}
+
+#help
+{
+	font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin-left: 10px;
+	margin-top: 10px;
+	min-width: 284px;
+}
+
+.my_room
+{
+	background-color: #ff3385;
+	cursor: default;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+}
+
+.other_room
+{
+	/*background-color: #d580ff;*/
+	cursor: pointer;
+	border-radius: 5px;
+	color: #ff3385;
+	text-align: center;
+}
+
+.other_room:hover
+{
+	/*background-color: #cc66ff;*/
+	background-color: #ff3385;
+	color: white;
+}
+
+.other_room>button
+{
+	display: none;
+	position: relative;
+	width: 100%;
+}
+.join_result, .name_result
+{
+	margin: 8px;
+	padding: 10px;
+	position: relative;
+	display: block;
+	text-align: center;
+	font-family: cursive;
+}
+
+.join_result > div, .name_result > div
+{
+	display: inline;
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+}
+.join_result div
+{
+	background-color: #3399ff;
+}
+.name_result div
+{
+	background-color: #ff0066;
+}
+.sender, .time, .circle
+{
+	display: inline-block;
+	padding: 3px;
+}
+.circle, .sender
+{
+	margin-top: 21px;
+}
+.sender
+{
+	font-size: 17px;
+}
+.date
+{
+	display: block;
+	padding: 3px;
+	float: right;
+	font-size: 13px;
+	position: relative;
+	top: 18px;
+}
+.time
+{
+	position: relative;
+	top: 6px;
+	margin-left: 6px;
+	font-size: 13px;
+}
+.circle
+{
+	width: 9px;
+	height: 9px;
+	background-color: #16af3c;
+	border-radius: 100px;
+}
+.message_text
+{
+	display: inline-block;
+	padding: 8px 20px;
+	margin-left: 5px;
+	background-color: #46a1ff;
+	border-radius: 5px;
+	font-size: 17px;
+	line-height: 1.5em;
+	font-family: cursive;
+	color: white;
+}
+.triangle, .my_message_triangle
+{
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 11px solid #46a1ff;
+    margin-left: 13px;
+}
+span
+{
+	margin-bottom: 10px;
+	font-family: cursive;
+}
+.my_message
+{
+	background-color: #ff3385;
+	color: white;
+}
+.my_message_triangle
+{
+    border-bottom: 11px solid #ff3385;
+}
+#roommates .me
+{
+	background-color: #66f;
+	color: white;
+	border: none;
+}
+#roommates .others
+{
+	color: #66f;
+}
+.hide
+{
+	display: none;
+}
+@media screen and (max-width: 1400px) and (min-width: 1300px){
+	body
+	{
+		padding: 0px 9%;
+	}
+	.inline-message-list
+	{
+		width: 1200px;
+	}
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1200px){
+	body
+	{
+		padding: 0px 8%;
+	}
+}
+@media screen and (max-width: 1200px){
+	body
+	{
+		padding: 0px 0px;
+	}
+}

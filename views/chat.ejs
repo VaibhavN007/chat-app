@@ -1,0 +1,55 @@
+<html>
+<head>
+	<% include ./partials/head %>
+</head>
+<body>
+
+<div id='container'>
+
+	<span style="display: initial">Your Name:</span>
+	<div id='name'></div>
+
+	<br>
+	
+	<span style="display: initial">Current Room:</span>
+	<div id='room'></div>
+
+	<br>
+
+	<div class="room_and_messages">
+		<div class="inline-room-list">
+			<span style="display: inherit; text-align: center">All Rooms:</span>
+			<div id='room-list'></div>
+		</div>
+
+		<div class="inline-message-list">
+			<span style="display: inherit; text-align: center">Messages:</span>
+			<div id='messages'></div>
+		</div>
+
+		<div class="inline-roommates-list">
+			<span style="display: inherit; text-align: center">All Roommates:</span>
+			<div id='roommates'></div>
+		</div>	
+
+	</div>
+
+	<br>
+	<form id='send-form'>
+		<input id='send-message' type="text"/>
+		<input id='send-button' type='submit' class="btn btn-info" value='Send'/>
+	
+		<div id='help'>
+			Chat commands:
+			<ul>
+				<li>Change nickname: <code>/nick [username]</code></li>
+				<li>Join/create room: <code>/join [room name]</code></li>
+				<li>Hide/Show Chats: <code>/x or /clear</code></li>
+				<li>Hide/Show Notifications: <code>/notif</code></li>
+			</ul>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
